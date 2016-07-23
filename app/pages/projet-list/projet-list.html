@@ -1,0 +1,44 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Liste des Projets
+		</ion-title>
+		 <ion-buttons end>
+        <button (click)="createProjet()"><ion-icon name="cloud-upload"></ion-icon></button>
+      </ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+	<ion-item>
+		<ion-input type="text" placeholder="Chercher un Projet..." (input)="chercherProjet($event, searchKey)"></ion-input>
+	</ion-item>
+	
+
+ <ion-list>
+ 
+      <ion-item-sliding *ngFor="let p of projets" (click)="itemTapped($event, p)">
+ 
+
+
+        <ion-item>
+ 
+             <ion-avatar item-left>
+				<!--<img src="https://image.tmdb.org/t/p/w92{{p.poster_path}}"/>-->
+			</ion-avatar>
+			<h2>{{p.intitule}}</h2>
+			<p class="item-description">{{p.taux}}</p>
+ 
+        </ion-item>
+ 
+        <ion-item-options>
+          <button light (click)="updateProjet(p)">
+            <ion-icon name="create"></ion-icon>
+          </button>
+          <button primary (click)="deleteProjet(p)">
+            <ion-icon name="checkmark"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list> 	
+</ion-content>

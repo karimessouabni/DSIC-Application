@@ -1,0 +1,40 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			projet Info
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+	<div *ngIf="projet" class="selection">
+		<ion-card>
+			<ion-item>
+				<ion-avatar item-left image-large>
+					<!--<img src="https://image.tmdb.org/t/p/w92{{projet.poster_path}}"/>-->
+				</ion-avatar>
+				<ion-item-content class="projet-title-data">
+					<h1>{{projet.intitule}}</h1>
+					<p>{{projet.commune}}</p>
+				</ion-item-content>
+			</ion-item>
+
+			<ion-item>
+				<icon document item-left></icon>
+				<h2>Overview</h2>
+				<p class="item-description">{{projet.cout}}</p>
+			</ion-item>
+			<ion-item>
+				<icon bookmark item-left></icon>
+				<h2>Average Vote</h2>
+				<p>{{projet.vote_average}}</p>
+			</ion-item>    
+			<ion-item>
+  <ion-icon name="logo-twitter" item-left></ion-icon>
+  Followers
+  <ion-badge item-right>260k</ion-badge>
+</ion-item>
+		</ion-card>
+	</div>
+
+</ion-content>
