@@ -20,25 +20,27 @@ Preview :
 
 
 The development of this mobile application was based on Angular 2 which employs an MV* Architectural pattern. Like the web application’s MVC architecture, used and discussed before, the MV* separates the view from the logic and makes the code better structured and easily reused and tested.
+
 For each page on the application we’ve developed a model a view and if needed a set of controllers, services and providers. So, the M stands for Model, V for View and the star for (controllers, services and providers).
 
-The Model:
+**The Model:**
 A TypeScript class containing fields, constructor (which is called once the specific page is
 opened) and methods to describe the behavior of the application. The model can also import
 services and providers e.g.: Ionic tools and directives.
-The View:
+
+**The View:**
 Is the combination of the HTML and the Scss file (used to add style). The view gets updated
 through data two-way binding: When data in the model changes, the view reflects the change,
 and when data in the view changes, the model is updated as well. This happens immediately
 and automatically, which makes sure that the model and the view are updated at all times.
-Services and Providers:
+**Services and Providers:**
 Several Services and Providers were used:
-• Some were imported directly from ionic and Angular resources, like:
-o NavController: to control data while navigating between the app’s pages;
-o Http: to make http request.
-• And others were developed. For example, we have:
-o
-o
-Services making a connection with the web application Controllers, which
-retrieve data from the web application Model and give it back to the mobile application Model through Services. The Views are then updated using data two-way binding;
-Form validator: Making sure the syntax is correct while filling a form on the application.
+	1.Some were imported directly from ionic and Angular resources, like:
+		- NavController: to control data while navigating between the app’s pages;
+		- Http: to make http request.
+	
+    2.And others were developed. For example, we have:
+
+		Services making a connection with the web application Controllers, which
+		retrieve data from the web application Model and give it back to the mobile application Model 		  through Services. The Views are then updated using data two-way binding;
+		Form validator: Making sure the syntax is correct while filling a form on the application.
