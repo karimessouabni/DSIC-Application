@@ -44,5 +44,5 @@ Several Services and Providers were used:
     2.And others were developed. For example, we have:
 
 		Services making a connection with the web application Controllers, which
-		retrieve data from the web application Model and give it back to the mobile application Model 		  through Services. The Views are then updated using data two-way binding;
+		retrieve data from the web application Model and give it back to the mobile application Model through Services. The Views are then updated using data two-way binding;
 		Form validator: Making sure the syntax is correct while filling a form on the application.
