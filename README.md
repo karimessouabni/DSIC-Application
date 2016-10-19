@@ -35,6 +35,8 @@ and when data in the view changes, the model is updated as well. This happens im
 and automatically, which makes sure that the model and the view are updated at all times.
 **Services and Providers:**
 Several Services and Providers were used:
+
+
 	1.Some were imported directly from ionic and Angular resources, like:
 		- NavController: to control data while navigating between the app’s pages;
 		- Http: to make http request.
