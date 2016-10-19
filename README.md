@@ -24,16 +24,20 @@ The development of this mobile application was based on Angular 2 which employs 
 For each page on the application we’ve developed a model a view and if needed a set of controllers, services and providers. So, the M stands for Model, V for View and the star for (controllers, services and providers).
 
 **The Model:**
+
 A TypeScript class containing fields, constructor (which is called once the specific page is
 opened) and methods to describe the behavior of the application. The model can also import
 services and providers e.g.: Ionic tools and directives.
 
 **The View:**
+
 Is the combination of the HTML and the Scss file (used to add style). The view gets updated
 through data two-way binding: When data in the model changes, the view reflects the change,
 and when data in the view changes, the model is updated as well. This happens immediately
 and automatically, which makes sure that the model and the view are updated at all times.
+
 **Services and Providers:**
+
 Several Services and Providers were used:
 
 
