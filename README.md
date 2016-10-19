@@ -9,3 +9,10 @@ Follow these instruction to deploy this example:
 5. ionic serve -l -c -s -> To see if everything is working as it should
 6. ionic run android -l -c -s 
 
+
+
+Preview : 
+![alt tag](http://farm9.staticflickr.com/8277/30130058730_b38be8dbe3_b.jpg)
+
+ 
+![alt tag](http://farm9.staticflickr.com/8418/29796203194_fed95a26e0_b.jpg)
