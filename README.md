@@ -17,7 +17,7 @@ Preview :
  
 ![alt tag](http://farm9.staticflickr.com/8418/29796203194_fed95a26e0_b.jpg)
 
-
+![alt tag](http://i.giphy.com/jTdCEgaECWGCk.gif)
 
 The development of this mobile application was based on Angular 2 which employs an MV* Architectural pattern. Like the web application’s MVC architecture, used and discussed before, the MV* separates the view from the logic and makes the code better structured and easily reused and tested.
 
